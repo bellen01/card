@@ -59,6 +59,8 @@ body {
     box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
     transition: transform 1s ease-in-out;
     /* z-index: 2; */
+
+    top: 5px;
 }
 
 .card::before {
@@ -72,6 +74,11 @@ body {
     left: 11px;
     top: 11px;
     /* z-index: 0; */
+
+    width: 240px;
+    height: 140px;
+    left: 12px;
+    top: 12px;
 }
 
 .card:hover {
@@ -166,6 +173,7 @@ body {
     width: 0;
     height: 0;
     z-index: 1;
+    pointer-events: none;
 }
 
 .front::before {
@@ -176,6 +184,7 @@ body {
     top: -195px;
     width: 0;
     height: 0;
+    pointer-events: none;
 }
 
 .shadow {
